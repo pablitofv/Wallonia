@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pablitofv.github.io/Wallonia/sitemap.xml

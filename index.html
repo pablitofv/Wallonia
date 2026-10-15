@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0B0C0E">
+<title>Valonia: 13 días a pie de Lille a Maastricht, película a película · un proyecto de creative vibecoding</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%230B0C0E%22/%3E%3Cpath d=%22M16 27 C 12 21, 20 15, 15 5%22 fill=%22none%22 stroke=%22%23F6C945%22 stroke-width=%222.2%22 stroke-linecap=%22round%22/%3E%3C/svg%3E">
+<meta name="description" content="249 km a pie de Lille a Maastricht: cada película corta filmada en el camino, en orden, con su sonido, sobre el suelo donde fue filmada.">
+<link rel="canonical" href="https://pablitofv.github.io/Wallonia/">
+<link rel="alternate" hreflang="es" href="https://pablitofv.github.io/Wallonia/">
+<link rel="alternate" hreflang="en" href="https://pablitofv.github.io/Wallonia/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://pablitofv.github.io/Wallonia/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Valonia">
+<meta property="og:title" content="Valonia: 13 días a pie de Lille a Maastricht, película a película · un proyecto de creative vibecoding">
+<meta property="og:description" content="249 km a pie de Lille a Maastricht: cada película corta filmada en el camino, en orden, con su sonido, sobre el suelo donde fue filmada.">
+<meta property="og:url" content="https://pablitofv.github.io/Wallonia/">
+<meta property="og:image" content="https://pablitofv.github.io/Wallonia/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Valonia: the walk's line drawn across a dark map of Wallonia, from Lille to Maastricht">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Valonia: 13 días a pie de Lille a Maastricht, película a película · un proyecto de creative vibecoding">
+<meta name="twitter:description" content="249 km a pie de Lille a Maastricht: cada película corta filmada en el camino, en orden, con su sonido, sobre el suelo donde fue filmada.">
+<meta name="twitter:image" content="https://pablitofv.github.io/Wallonia/og.jpg">
+<meta name="keywords" content="creative vibecoding, vibe coding, vibecoding project, AI-assisted creative coding, Claude, Claude Code, interactive documentary, walking, Wallonia, Valonia, Belgium, Lille to Maastricht, map, MapLibre, OpenStreetMap, travel film, slow travel">
+<meta name="author" content="Pablo Fernández Vallejo">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="preload" href="vendor/fonts/lora-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="data/trips.json" as="fetch" crossorigin>
+<link rel="preload" href="data/belgica-2025-reel.json" as="fetch" crossorigin>
+<link rel="modulepreload" href="reel/main.js">
+<link rel="modulepreload" href="reel/strip.js">
+<link rel="modulepreload" href="reel/player.js">
+<link rel="modulepreload" href="reel/odometer.js">
+<link rel="modulepreload" href="reel/sound.js">
+<link rel="modulepreload" href="reel/i18n.js">
+<link rel="modulepreload" href="js/util.js">
+<link rel="modulepreload" href="map-style.js">
+<link rel="modulepreload" href="vendor/maplibre-gl/maplibre-gl.mjs">
+<link rel="modulepreload" href="vendor/maplibre-gl/maplibre-gl-shared.mjs">
+<link rel="stylesheet" href="vendor/fonts.css">
+<link rel="stylesheet" href="vendor/maplibre-gl/maplibre-gl.css">
+<link rel="stylesheet" href="reel/reel.css">
+<script defer src="vendor/pmtiles/pmtiles.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","@id":"https://pablitofv.github.io/Wallonia/#work","name":"Valonia","alternateName":["Wallonia","Wallonia, a walk film by film"],"headline":"A 13-day walk across Wallonia, film by film","description":"13 days on foot from Lille to Maastricht (249 km), told by 803 short films played in order beside a map that walks with them. A creative vibecoding project by Pablo Fernández Vallejo and Claude Opus 5.5.","url":"https://pablitofv.github.io/Wallonia/","image":"https://pablitofv.github.io/Wallonia/og.jpg","inLanguage":["es","en"],"genre":["Interactive documentary","Creative coding"],"keywords":"creative vibecoding, vibe coding, vibecoding project, AI-assisted creative coding, Claude, Claude Code, interactive documentary, walking, Wallonia, Valonia, Belgium, Lille to Maastricht, map, MapLibre, OpenStreetMap, travel film, slow travel","isAccessibleForFree":true,"dateCreated":"2025-07","datePublished":"2026-10-15","author":{"@type":"Person","name":"Pablo Fernández Vallejo"},"creator":[{"@type":"Person","name":"Pablo Fernández Vallejo"},{"@type":"SoftwareApplication","name":"Claude Opus 5.5","applicationCategory":"AI model","creator":{"@type":"Organization","name":"Anthropic"}}],"contentLocation":[{"@type":"Place","name":"Wallonia, Belgium"},{"@type":"Place","name":"Lille, France"},{"@type":"Place","name":"Maastricht, Netherlands"}],"subjectOf":{"@type":"Article","url":"https://pablitofv.github.io/Wallonia/about.html","name":"Wallonia, a walk film by film: a creative vibecoding project with Claude"}}</script>
+</head>
+<body>
+  <div id="glow" aria-hidden="true"></div>
+  <button type="button" id="home"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 L5 8 L10 13"/></svg><span></span></button>
+  <div id="lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button>
+  </div>
+  <section id="gauges" aria-live="off">
+    <p class="g-day"><span class="g-k"></span> <span class="g-dayn"></span> <span class="g-of"></span></p>
+    <p class="g-date slide"></p>
+    <div class="g-clock"></div>
+    <div class="g-km"><div class="g-kmodo"></div><p class="g-unit"><span class="g-unit-k"></span><br><span class="g-from"></span></p></div>
+    <p class="g-place slide"></p>
+    <p class="g-site"></p>
+    <p class="g-cut"></p>
+    <p class="g-ratio"></p>
+  </section>
+  <main id="frame">
+    <div class="f-grain" aria-hidden="true"></div>
+    <div class="f-pause" aria-hidden="true"></div>
+    <div class="f-ride" aria-live="polite"></div>
+    <div class="f-ui">
+      <button type="button" class="f-side f-prev" id="prev"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 L7 12 L15 20"/></svg></button>
+      <button type="button" class="f-side f-next" id="next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 L17 12 L9 20"/></svg></button>
+      <div class="f-foot">
+        <button type="button" id="pause" class="f-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-pause" d="M8 5 V19 M16 5 V19"/><path class="i-play" d="M8 5 L19 12 L8 19 Z"/></svg></button>
+        <span class="f-count" aria-hidden="true"><svg viewBox="0 0 36 36"><circle class="f-ring-bg" cx="18" cy="18" r="15"/><circle class="f-ring" cx="18" cy="18" r="15"/></svg><b>0</b></span>
+        <button type="button" id="sound" class="f-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-spk" d="M4 9 H8 L13 5 V19 L8 15 H4 Z"/><path class="i-on" d="M16.5 8.5 Q19 12 16.5 15.5 M19 6 Q23 12 19 18"/><path class="i-off" d="M16 9 L22 15 M22 9 L16 15"/></svg></button>
+        <button type="button" id="jump" class="f-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7 H7 C11 7 13 17 17 17 H21 M18 14 L21 17 L18 20 M3 17 H7 C8.5 17 9.6 15.8 10.5 14.3 M13.5 9.7 C14.4 8.2 15.5 7 17 7 H21 M18 4 L21 7 L18 10"/></svg></button>
+        <button type="button" id="share" class="f-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15 V3 M7 8 L12 3 L17 8 M5 12 V20 H19 V12"/></svg></button>
+      </div>
+      <div class="f-prog"><i></i></div>
+    </div>
+    <section id="end" hidden></section>
+  </main>
+  <aside id="strip"></aside>
+  <div id="tip" aria-hidden="true"></div>
+  <button type="button" id="close-map" hidden></button>
+  <p id="map-hint" aria-live="polite"></p>
+  <section id="start">
+    <div class="s-field" aria-hidden="true"></div>
+    <div class="s-wrap">
+      <div class="s-in">
+        <h1>Valonia</h1>
+        <p class="s-sub">249 km a pie</p>
+        <p class="s-lede">Trece días caminando hacia el este desde una habitación en Lille a una capilla en Maastricht.</p>
+      </div>
+    </div>
+    <p class="s-made">Hecho con amor por Pablo Fernández Vallejo y Claude Opus 5.5 · <a href="about.html#es">Sobre el proyecto</a></p>
+  </section>
+  <p id="toast" role="status" hidden></p>
+  <script type="module" src="reel/main.js"></script>
+</body>
+</html>
