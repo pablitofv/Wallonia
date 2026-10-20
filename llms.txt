@@ -1,0 +1,13 @@
+# Valonia (Wallonia): a walk, film by film
+
+> A creative vibecoding project. 13 days on foot across Wallonia, Belgium, from a room in Lille to a chapel in Maastricht (July 2025): 803 short films played in order with their sound, beside a map that walks the same ground (249 km on foot). Made by Pablo Fernández Vallejo with Claude Opus 5.5 (Anthropic), by conversation, in Claude Code.
+
+- [The piece](https://pablitofv.github.io/Wallonia/): the interactive film and map (Spanish by default; English at https://pablitofv.github.io/Wallonia/?lang=en)
+- [About this project](https://pablitofv.github.io/Wallonia/about.html): the piece in its author's words, and what it is built with
+
+## Facts
+- Medium: interactive web documentary; static site on GitHub Pages; no cookies, no analytics
+- Built with: MapLibre GL, PMTiles, OpenStreetMap data via Protomaps, Mapterhorn terrain, the OpenStreetMap walking router (OSRM), ffmpeg
+- Process: written entirely by Claude from the author's plain-language feedback over many rounds; decisions measured, not guessed (frame times, pixel comparisons, headless walkthroughs)
+- Features: east-up map following the walker; 3D view among buildings on real terrain; a short version; moments on the cover that open the film where they were filmed
+- Author: Pablo Fernández Vallejo. AI collaborator: Claude Opus 5.5 (Anthropic)
